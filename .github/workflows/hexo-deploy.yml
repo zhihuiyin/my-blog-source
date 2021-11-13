@@ -18,3 +18,4 @@ jobs:
           PUBLISH_REPOSITORY: zhihuiyin/my-blog # 公共仓库，格式：GitHub 用户名/仓库名
           BRANCH: gh-pages # 分支，填 gh-pages 就行
           PUBLISH_DIR: ./public # 部署 public 目录下的文件
+          BUILD_SCRIPT: npm install && npm run build
