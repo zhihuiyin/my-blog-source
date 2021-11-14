@@ -5,3 +5,5 @@ db.json
 node_modules/
 public/
 .deploy*/
+HEXO_DEPLOY.pub
+HEXO_DEPLOY
