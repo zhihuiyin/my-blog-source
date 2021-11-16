@@ -10,9 +10,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@main
-      # - name: copy token
-      #   run: |
-      #     sudo chmod -R 777 GITHUB_WORKSPACE
       - name: Build and Deploy
         uses: theme-keep/hexo-deploy-github-pages-action@master # 使用专门部署 Hexo 到 GitHub pages 的 action
         env:
@@ -22,7 +19,7 @@ jobs:
           # access-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }} 
           # PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }} # secret 名
           PERSONAL_TOKEN: ${{ secrets.HEXO_DEPLOY }} # secret 名
-          PUBLISH_REPOSITORY: zhihuiyin/my-blog # 公共仓库，格式：GitHub 用户名/仓库名
+          # PUBLISH_REPOSITORY: zhihuiyin/my-blog # 公共仓库，格式：GitHub 用户名/仓库名
           BRANCH: gh-pages # 分支，填 gh-pages 就行
           PUBLISH_DIR: ./public # 部署 public 目录下的文件
           BUILD_SCRIPT: npm install && npm run build
