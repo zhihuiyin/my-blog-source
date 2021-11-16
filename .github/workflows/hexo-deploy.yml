@@ -20,9 +20,8 @@ jobs:
           # token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # access-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }} 
-          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }} # secret 名
           # PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }} # secret 名
-          # PERSONAL_TOKEN: ${{ secrets.HEXO_DEPLOY }} # secret 名
+          PERSONAL_TOKEN: ${{ secrets.HEXO_DEPLOY }} # secret 名
           PUBLISH_REPOSITORY: zhihuiyin/my-blog # 公共仓库，格式：GitHub 用户名/仓库名
           BRANCH: gh-pages # 分支，填 gh-pages 就行
           PUBLISH_DIR: ./public # 部署 public 目录下的文件
