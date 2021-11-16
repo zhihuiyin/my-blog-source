@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@main
       - name: copy token
         run: |
-          sudo chmod -R 777 GITHUB_REPOSITORY
+          sudo chmod -R 777 GITHUB_WORKSPACE
       - name: Build and Deploy
         uses: theme-keep/hexo-deploy-github-pages-action@master # 使用专门部署 Hexo 到 GitHub pages 的 action
         env:
